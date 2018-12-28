@@ -13,6 +13,7 @@
 		93648FC421D58ECE00FA7C28 /* exampleImageClick.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93648FC221D58ECE00FA7C28 /* exampleImageClick.xcdatamodeld */; };
 		93648FC621D58ECF00FA7C28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93648FC521D58ECF00FA7C28 /* Assets.xcassets */; };
 		93648FC921D58ECF00FA7C28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93648FC721D58ECF00FA7C28 /* LaunchScreen.storyboard */; };
+		9372291C21D59D72006423DF /* picSelectImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9372291B21D59D72006423DF /* picSelectImage.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		93648FC521D58ECF00FA7C28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93648FC821D58ECF00FA7C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93648FCA21D58ECF00FA7C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9372291B21D59D72006423DF /* picSelectImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = picSelectImage.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				93648FBD21D58ECE00FA7C28 /* ViewController.swift */,
 				93648FBF21D58ECE00FA7C28 /* Main.storyboard */,
 				93648FC521D58ECF00FA7C28 /* Assets.xcassets */,
+				9372291B21D59D72006423DF /* picSelectImage.jpg */,
 				93648FC721D58ECF00FA7C28 /* LaunchScreen.storyboard */,
 				93648FCA21D58ECF00FA7C28 /* Info.plist */,
 				93648FC221D58ECE00FA7C28 /* exampleImageClick.xcdatamodeld */,
@@ -128,6 +131,7 @@
 				93648FC921D58ECF00FA7C28 /* LaunchScreen.storyboard in Resources */,
 				93648FC621D58ECF00FA7C28 /* Assets.xcassets in Resources */,
 				93648FC121D58ECE00FA7C28 /* Main.storyboard in Resources */,
+				9372291C21D59D72006423DF /* picSelectImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
