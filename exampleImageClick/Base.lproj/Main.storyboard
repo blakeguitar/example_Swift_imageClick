@@ -34,7 +34,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="imageSelect" destination="EdW-Ph-2Sw" id="EJW-QX-OfN"/>
+                        <outlet property="imageView" destination="EdW-Ph-2Sw" id="ORc-Ma-cW3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
