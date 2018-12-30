@@ -8,8 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
+    //MARK: Global Properties
+    
+    var globalImage:UIImage? = nil
+    var imagePicker = UIImagePickerController()
     
     //MARK: Private Properties
     
@@ -55,10 +59,45 @@ class ViewController: UIViewController {
         if (gesture.view as? UIImageView) != nil {
             print("Image Tapped")
             //Here you can initiate your new ViewController
-            
+            selectPhoto()
         }
     }
     
 
+    // Select Photo
+    func selectPhoto(){
+        
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
+            imagePicker.delegate = self
+            imagePicker.allowsEditing = false
+            imagePicker.sourceType = .photoLibrary
+            present(imagePicker, animated: true, completion: nil)
+        }else{
+            SS_Alert.displayNotification(parmTitle: "Notify", parmMessage: "This app requires access to your Photo Library")
+        }
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let selectedImage = info[.originalImage] as? UIImage {
+            
+            globalImage = selectedImage
+            imageView.image = globalImage
+            
+            //SS_Image.saveImage(image: globalImage!)
+            
+        }else{
+            SS_Alert.displayNotification(parmTitle: "Notify", parmMessage: "Expected a dictionary containing an image, but was provided the following: \(info)")
+            SS_Alert.displayNotification(parmTitle: "Notify", parmMessage: "This app requires access to your Photo Library")
+        }
+        
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+
+    
+    
 }
 
